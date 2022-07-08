@@ -1,0 +1,17 @@
+/* footer */
+footer{
+    background-color: rgb(66, 66, 66);
+    padding: 35px;
+    font-size: 80%;
+  }
+  footer p{
+    color: #888;
+    text-align: center;
+  }
+ .row ul li{
+   color: #888;
+    list-style: none;
+    display: inline-block;
+    font-size: 150%;
+    
+  }

@@ -1,0 +1,56 @@
+body{
+    display: flex;
+    flex-direction: column;
+    font-family:'Lora', serif;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 1.2vw;
+}
+.container .row{
+  position: absolute;
+  z-index: 0;
+}
+.row img{
+  width: 10%;
+}
+@keyframes animation-4-stroke {
+  0% {
+    transform: translate3d(0, -100%, 0);
+  }
+  30% {
+    transform: translate3d(0, -100%, 0);
+  }
+  60% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes animation-4-text {
+  0% {
+    transform: translate3d(0, -100%, 0);
+  }
+  50% {
+    transform: translate3d(0, -100%, 0);
+  }
+  80% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+#animation-4 > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+#animation-4 > div div {
+  animation: 3s ease-out infinite alternate both;
+}
+#animation-4 > div:first-child {
+  font-size: 2.8em;
+}
+#animation-4 > div:first-child div {
+  animation-name: animation-4-text;
+}
+#animation-4 > div:last-child div {
+  width: 0.38em;
+  height: 2.4em;
+  background-color: #cf4c4e;
+  animation-name: animation-4-stroke;
+}
